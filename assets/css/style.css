@@ -87,7 +87,7 @@ nav{
 @media (max-width: 572px){
     #contacto{
         padding: 1rem 1rem !important;
-        margin-top: 0;
+        margin-top: 0 !important;
     }
     #contacto hr{
         margin: 1rem 0;
