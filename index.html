@@ -79,8 +79,7 @@
         </div>
     </header>
     
-
-    <!--Quienes somos: -->
+    <!--Sección Quienes somos-->
     <section class="container-fluid d-none d-sm-block my-5 px-5" id="quienesSomos">
         <div>
             <h2 class="text-center">¿Quiénes Somos?</h4>
@@ -88,41 +87,46 @@
         <hr>
         <div class="row pt-3 px-3">
             <div class="col-md-4 col-lg-4 my-2">
-                <div class="text-center faviconViajes mb-2">
-                    <i
-                    data-bs-toggle="popover" 
-                    title="Comodidad y Seguridad"
-                    data-bs-content="Viajes Chile es la agencia nacional mejor evaluada del 2021."
-                    data-bs-placement="top" 
-                    class="fas fa-plane fa-3x"></i>
+                <!--Se agrega a cada div del favicon un popover con información complementaria-->
+                <div 
+                data-bs-container="body"
+                data-bs-toggle="popover" 
+                title="Comodidad y Seguridad"
+                data-bs-content="Viajes Chile es la agencia nacional mejor evaluada del 2021."
+                data-bs-placement="top"
+                class="text-center faviconViajes mb-2">
+                    <i class="fas fa-plane fa-3x"></i>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo delectus dignissimos accusantium minima eveniet, iure provident corporis, aliquam veritatis quaerat dolor aut aperiam vitae id quae. Omnis dignissimos minima velit.</p>
             </div>
             <div class="col-md-4 col-lg-4 my-2">                
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo delectus dignissimos accusantium minima eveniet, iure provident corporis, aliquam veritatis quaerat dolor aut aperiam vitae id quae. Omnis dignissimos minima velit.</p>
-                <div class="text-center faviconViajes">
-                    <i 
-                    data-bs-toggle="popover" 
-                    title="Explora y Asombrate"
-                    data-bs-content="Viajes Chile incluye variedad de senderos y zonas de trekking."
-                    data-bs-placement="bottom"
-                    class="fas fa-mountain fa-3x"></i>
+                <div 
+                data-bs-container="body"
+                data-bs-toggle="popover" 
+                title="Explora y Asombrate"
+                data-bs-content="Viajes Chile incluye variedad de senderos y zonas de trekking."
+                data-bs-placement="bottom"
+                class="text-center faviconViajes">
+                    <i class="fas fa-mountain fa-3x"></i>
                 </div>
             </div>
             <div class="col-md-4 col-lg-4 my-2">
-                <div class="text-center faviconViajes mb-2"> 
-                    <i 
-                    data-bs-toggle="popover" 
-                    title="Economía y Eficiencia"
-                    data-bs-content="Viajes Chile te ofrece la mejor alternativa en rutas para lo que necesitas."
-                    data-bs-placement="top"
-                    class="fas fa-route fa-3x"></i>
+                <div 
+                data-bs-container="body"
+                data-bs-toggle="popover" 
+                title="Economía y Eficiencia"
+                data-bs-content="Viajes Chile te ofrece la mejor alternativa en rutas para lo que necesitas." 
+                data-bs-placement="top"
+                class="text-center faviconViajes mb-2"> 
+                    <i class="fas fa-route fa-3x"></i>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo delectus dignissimos accusantium minima eveniet, iure provident corporis, aliquam veritatis quaerat dolor aut aperiam vitae id quae. Omnis dignissimos minima velit.</p>
             </div>
         </div>
     </section>
 
+    <!--Sección Destacados-->
     <section id="destacados" class="container-fluid py-5 px-5">
         <div>
             <h1 class="text-center mt-2">Destacados</h1>
@@ -132,7 +136,10 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3 my-2">
                     <div class="card h-100">
-                        <img class="card-img-top imgTarjeta" src="./assets/img/card1.jpg">
+                        <!--Se agrega al img un tooltip con información complementaria-->
+                        <img 
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Zona Austral"
+                        class="card-img-top imgTarjeta" src="./assets/img/card1.jpg">
                         <div class="card-body">
                             <h4 class="card-title mb-2">Lorem ipsum dolor sit</h4>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis assumenda quaerat omnis aperiam, asperiores veniam nesciunt fugiat praesentium neque. Ad, facilis.</p>
@@ -141,7 +148,9 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 my-2">
                     <div class="card h-100">
-                        <img class="card-img-top imgTarjeta" src="./assets/img/card2.jpg">
+                        <img 
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Zona Costera"
+                        class="card-img-top imgTarjeta" src="./assets/img/card2.jpg">
                         <div class="card-body">
                             <h4 class="card-title mb-3">Amet consectetur adipisicing elit</h4>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis assumenda quaerat omnis aperiam, asperiores veniam nesciunt fugiat praesentium neque. Ad, facilis.</p>
@@ -150,7 +159,9 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 my-2">
                     <div class="card h-100">
-                        <img class="card-img-top imgTarjeta" src="./assets/img/card3.jpg">
+                        <img 
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Zona Norte"
+                        class="card-img-top imgTarjeta" src="./assets/img/card3.jpg">
                         <div class="card-body">
                             <h4 class="card-title mb-3">Officia deleniti beatae quasi dolorum</h4>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis assumenda quaerat omnis aperiam, asperiores veniam nesciunt fugiat praesentium neque. Ad, facilis.</p>
@@ -159,7 +170,9 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 my-2">
                     <div class="card h-100">
-                        <img class="card-img-top imgTarjeta" src="./assets/img/card4.jpg">
+                        <img 
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Zona Sur"
+                        class="card-img-top imgTarjeta" src="./assets/img/card4.jpg">
                         <div class="card-body">
                             <h4 class="card-title mb-3">Provident eligendi asperiores omnis</h4>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis assumenda quaerat omnis aperiam, asperiores veniam nesciunt fugiat praesentium neque. Ad, facilis.</p>
@@ -170,16 +183,36 @@
         </div>
     </section>
 
-    <section id="contacto" class="container-fluid text-center py-5 px-5">
+    <!--Sección Contacto-->
+    <section id="contacto" class="container-fluid text-center mt-5 py-5 px-5">
         <div>
             <h1>Contacto</h1>
         </div>
         <hr>
+        <!--Codigo extraído de typeform-->
         <div class="formulario">
             <div class="typeform-widget" data-url="https://form.typeform.com/to/Q9Yjt92f?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
         </div>
         
     </section>
+
+    <!--Footer-->
+    <footer class="text-center py-2">
+        <div class="row container-fluid m-auto">
+            <div class="col-12 col-sm-6">
+                <h1 
+                data-bs-toggle="modal" 
+                data-bs-target="#exampleModal"
+                class="font-weight-bold">VIAJES CHILE</h1>
+            </div>
+            <div class="col-12 col-sm-6 my-2 my-sm-0">
+                <a href="linkImaginarioaGithub"><i class="fab fa-github-square fa-3x mx-2"></i></a>
+                <a href="linkImaginarioaLinkedIn"><i class="fab fa-linkedin fa-3x mx-2"></i></a>
+                <a href="linkImaginarioaTwitter"><i class="fab fa-twitter-square fa-3x mx-2"></i></a>
+                <a href="linkImaginarioaFacebook"><i class="fab fa-facebook-square fa-3x mx-2"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <!--JQuery CDN 3.6.0-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -194,7 +227,7 @@
         crossorigin="anonymous"></script>
     <!--Mi script-->
     <script src="./assets/js/index.js"></script>
-
+    
 </body>
 
 </html>
