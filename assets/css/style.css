@@ -68,3 +68,24 @@ nav{
 .imgTarjeta{
     max-height: 25vh;
 }
+
+/*Contacto*/
+#contacto hr{
+    height: 3px !important;
+    background-color: #08e0e7;
+    margin: 2rem 0;
+    opacity: 0.7;
+}
+
+.formulario{
+    padding: 0 3rem;
+}
+
+@media (max-width: 572px){
+    #contacto{
+        padding: 1rem 1rem !important;
+    }
+    #contacto hr{
+        margin: 1rem 0;
+    }
+}
